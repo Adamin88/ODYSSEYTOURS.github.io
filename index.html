@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morocco Odyssey - Explore the Wonders of Morocco with Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/737cea3bc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Odyssey Tours</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#tours">Tours</a></li>
+                <a href="#why-choose-us">Why Choose Us</a>
+                <a href="#key-features">Key Features</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slide active" src="source/1110112_Seashore_Deep_Rocky_1920x1080.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="source/1104481_1080p_4k_2k_1920x1080.mp4" autoplay muted loop></video>
+
+        <div class="content active">
+            <h1>Uncover the Magic of Morocco</h1>
+            <p>Welcome to Morocco Odyssey Tours, your gateway to unforgettable adventures in Morocco. Immerse yourself in the vibrant culture, breathtaking landscapes, and rich history of this enchanting destination.</p>
+        </div>
+        <div class="content">
+            <div id="key">
+                <h1>Key Features</h1>
+                <p>Authentic Experiences : Immerse yourself in the heart and soul of Morocco with our authentic experiences. From exploring bustling souks to savoring traditional cuisine, our tours are designed to provide you with an authentic taste of Moroccan culture.</p>
+                <p>Expert Guides : Our experienced guides are passionate about sharing their knowledge and love for Morocco. With their expertise, you'll gain insights into the country's history, traditions, and hidden gems, ensuring an enriching and memorable journey.</p>
+                <p>Customized Itineraries : Tailor your Moroccan odyssey to suit your preferences with our customized itineraries. Whether you're interested in cultural immersion, adventure activities, or relaxation by the coast, we'll work with you to create a personalized itinerary that fulfills your travel dreams.</p>
+            </div>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active")
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active")
+            });
+
+            contents.forEach((content) => {
+                content.classList.remove("active")
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+
+
+        };
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+
+    </script>
+</body>
+</html>
+
