@@ -25,17 +25,19 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/yourusername/morocco-odyssey.git
+   git clone https://github.com/adamin88/odysseytours.github.io.git
 2. Open the index.html file in your web browser to view the project.
 
 ### Usage
 
 This project is intended to be used as the main landing page for the Morocco Odyssey tour agency. It serves as the first point of interaction for potential customers and provides them with all the necessary information to understand and book tours.
 
-Contributing
+### Contributing
+
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-Fork the Project
+### Fork the Project
+
 Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
