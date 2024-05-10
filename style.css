@@ -111,6 +111,11 @@ section{
     margin-bottom: 10px;
 }
 
+.home .content span{
+    font-size: 2em;
+    color: #ffb619;
+}
+
 .home .media-icons{
     z-index: 888;
     position: absolute;
